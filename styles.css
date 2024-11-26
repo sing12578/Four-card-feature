@@ -21,19 +21,21 @@ body {
     font-size: var(--font-size);
     font-family: var(--font-family);
 }
-
+a
 .fourCard-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    overflow-y: auto;
 }
 
-.fourCard-component {
+.header-text-component {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-height: auto;
 }
 
 .topic-header-text1 {
@@ -55,6 +57,7 @@ body {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 60px;
+    max-width: 500px;
 }
 
 .items-container {
@@ -62,25 +65,28 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-height: 100vw;
+    max-height: auto;
     gap: 40px;
 }
 
 .center-items-container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 40px;
 }
 
 .contain-container {
-    max-width: 350px;
-    max-height: 250px;
+    width: 350px;
+    height: 250px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 0.5rem;
 }
+
 .text-container {
     padding: 0 40px 0 40px;
 }
@@ -119,4 +125,49 @@ body {
 
 .b-calculator {
     border-top: 4px solid var(--Blue);
+}
+
+@media (max-width: 48em){
+    .fourCard-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+        align-items: center;
+        margin: 40px 0 40px 0;
+    }
+
+    .header-text-component {
+        max-width: 300px;
+    }
+
+    .topic-header-text1 {
+        font-size: 20px;
+    }
+    
+    .topic-header-text2 {
+        font-size: 20px;
+    }
+    
+    .header-artical-text{
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+
+    .contain-container {
+        width: 300px;
+        height: 250px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 0.5rem;
+        margin-bottom: 20px;
+    }
+
+    .items-container, .center-items-container {
+        display: inline-block;
+        gap: 20px;
+    }
+    
 }
