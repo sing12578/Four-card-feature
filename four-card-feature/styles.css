@@ -21,14 +21,15 @@ body {
     font-size: var(--font-size);
     font-family: var(--font-family);
 }
-a
+
 .fourCard-container {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     overflow-y: auto;
+    /* margin: 20px 0 20px 0; */
 }
 
 .header-text-component {
@@ -78,8 +79,8 @@ a
 }
 
 .contain-container {
-    width: 350px;
-    height: 250px;
+    max-width: 350px;
+    max-height: 250px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     display: flex;
     flex-direction: column;
@@ -155,8 +156,8 @@ a
     }
 
     .contain-container {
-        width: 300px;
-        height: 250px;
+        max-width: 300px;
+        max-height: 250px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         display: flex;
         flex-direction: column;
